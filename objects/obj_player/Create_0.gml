@@ -19,8 +19,8 @@ jump_max = 2;
 
 // JUMPTOP.
 jumptop_threshold = 4
-spin_frames_remaining = 0;
-spin_frames_max = 15;
+jumptop_frames_remaining = 0;
+jumptop_frames_max = 15;
 
 // Gravity.
 fall_gravity = 1;

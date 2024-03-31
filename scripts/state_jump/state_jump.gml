@@ -18,7 +18,7 @@ function state_jump(_player) {
 	// Trigger JUMPTOP state when player hits threshold.
 	if _player.jump_frames_remaining = _player.jumptop_threshold {
 		// Reset the remaining spin frames to max.
-		_player.spin_frames_remaining = _player.spin_frames_max;
+		_player.jumptop_frames_remaining = _player.jumptop_frames_max;
 		
 		_player.state = PLAYER_STATE.JUMPTOP;
 	}

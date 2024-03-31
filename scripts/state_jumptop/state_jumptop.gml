@@ -7,10 +7,10 @@ function state_jumptop(_player) {
 	handle_jump_movement(_player);
 	
 	// Count the spin timer.
-	_player.spin_frames_remaining--;
+	_player.jumptop_frames_remaining--;
 	
 	// Jump and spin timers ended. Trigger Fall state.
-	if _player.jump_frames_remaining = 0 && _player.spin_frames_remaining = 0 {
+	if _player.jump_frames_remaining = 0 && _player.jumptop_frames_remaining = 0 {
 		_player.state = PLAYER_STATE.FALL
 	}
 }
