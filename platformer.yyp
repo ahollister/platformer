@@ -454,6 +454,7 @@
     {"id":{"name":"spr_player_jump_top","path":"sprites/spr_player_jump_top/spr_player_jump_top.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},},
+    {"id":{"name":"spr_player_run_backup","path":"sprites/spr_player_run_backup/spr_player_run_backup.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},

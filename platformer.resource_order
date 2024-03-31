@@ -387,6 +387,7 @@
     {"name":"spr_player_jump_top","order":3,"path":"sprites/spr_player_jump_top/spr_player_jump_top.yy",},
     {"name":"spr_player_jump","order":2,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
     {"name":"spr_player_run","order":4,"path":"sprites/spr_player_run/spr_player_run.yy",},
+    {"name":"spr_player_run_backup","order":5,"path":"sprites/spr_player_run_backup/spr_player_run_backup.yy",},
     {"name":"spr_wall","order":7,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"Sprite8","order":16,"path":"sprites/Sprite8/Sprite8.yy",},
