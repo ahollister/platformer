@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"camera_follow_player",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"camera_follow_player",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"has_triggered_valid_jump",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"has_triggered_valid_jump",
+  "parent":{
+    "name":"utils",
+    "path":"folders/Scripts/player/utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

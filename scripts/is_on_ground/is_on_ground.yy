@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"is_on_ground",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_on_ground",
+  "parent":{
+    "name":"utils",
+    "path":"folders/Scripts/global/utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

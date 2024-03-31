@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"handle_collisions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"handle_collisions",
+  "parent":{
+    "name":"global",
+    "path":"folders/Scripts/global.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

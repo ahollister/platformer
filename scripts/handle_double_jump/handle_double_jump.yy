@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"handle_double_jump",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"handle_double_jump",
+  "parent":{
+    "name":"player",
+    "path":"folders/Scripts/player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

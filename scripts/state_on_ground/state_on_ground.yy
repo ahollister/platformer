@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"state_on_ground",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"state_on_ground",
+  "parent":{
+    "name":"states",
+    "path":"folders/Scripts/player/states.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

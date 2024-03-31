@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"state_idle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"state_idle",
+  "parent":{
+    "name":"states",
+    "path":"folders/Scripts/player/states.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

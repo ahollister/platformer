@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"state_jump",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"state_jump",
+  "parent":{
+    "name":"states",
+    "path":"folders/Scripts/player/states.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
