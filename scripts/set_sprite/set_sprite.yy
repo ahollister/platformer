@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"state_idle",
+  "%Name":"set_sprite",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"state_idle",
+  "name":"set_sprite",
   "parent":{
-    "name":"states",
-    "path":"folders/Scripts/player/states.yy",
+    "name":"state",
+    "path":"folders/Scripts/global/state.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

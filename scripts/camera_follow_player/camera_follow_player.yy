@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"camera_follow_player",
   "parent":{
-    "name":"camera",
-    "path":"folders/Scripts/camera.yy",
+    "name":"Scripts",
+    "path":"folders/Objects/Camera/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

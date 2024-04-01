@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"state_run",
+  "%Name":"states_player",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"state_run",
+  "name":"states_player",
   "parent":{
-    "name":"states",
-    "path":"folders/Scripts/player/states.yy",
+    "name":"state",
+    "path":"folders/Objects/Player/Scripts/state.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

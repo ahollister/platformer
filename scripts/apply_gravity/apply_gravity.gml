@@ -1,7 +1,10 @@
-function apply_gravity(_player) {
-	_player.move_y += _player.fall_gravity;
+/// @apply_gravity(_obj)
+/// @description Apply a gravity effect to the character's move_y property using their fall_gravity and terminal_velocity properties.
+/// @param _obj The object gravity is acting on.
+function apply_gravity(_obj) {
+	_obj.move_y += _obj.fall_gravity;
 	
-	if (_player.move_y > _player.terminal_velocity) {
-		_player.move_y = _player.terminal_velocity;
+	if (_obj.move_y > _obj.terminal_velocity) {
+		_obj.move_y = _obj.terminal_velocity;
 	}
 }

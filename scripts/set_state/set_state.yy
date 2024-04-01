@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"state_fall",
+  "%Name":"set_state",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"state_fall",
+  "name":"set_state",
   "parent":{
-    "name":"states",
-    "path":"folders/Scripts/player/states.yy",
+    "name":"state",
+    "path":"folders/Scripts/global/state.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

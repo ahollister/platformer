@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"handle_ongoing_jump_movement",
+  "%Name":"global_collidables",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"handle_ongoing_jump_movement",
+  "name":"global_collidables",
   "parent":{
     "name":"global",
     "path":"folders/Scripts/global.yy",

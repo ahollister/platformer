@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"handle_collisions",
+  "%Name":"handle_jump_movement",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"handle_collisions",
+  "name":"handle_jump_movement",
   "parent":{
     "name":"global",
     "path":"folders/Scripts/global.yy",
