@@ -13,8 +13,6 @@ function states_player(_obj) {
 	function all_states(_obj) {
 		// Collisions.
 		move_and_collide(_obj.move_x, _obj.move_y+2, _obj.collidables);
-		// Gravity.
-		apply_gravity(_obj);
 		// X movement and sprite direction.
 		handle_player_movement_x(_obj);
 	}
@@ -38,6 +36,9 @@ function states_player(_obj) {
 	function ground_resets(_obj) {
 		_obj.move_y = 0;
 		_obj.jump_count = 0;
+		_obj.coyote_frames = 0;
+		_obj.coyote_frames_prev = 0;
+		_obj.coyote_disabled = false;
 	};
 	
 
@@ -54,6 +55,9 @@ function states_player(_obj) {
 	states[STATE_PLAYER.IDLE] = function(_obj) {
 		// State agnostic code.
 		all_states(_obj);
+		
+		// Gravity.
+		apply_gravity(_obj, _obj.default_gravity);
 		
 		// Reset some properties for ground behaviour.
 		if is_on_ground(_obj) {
@@ -84,6 +88,9 @@ function states_player(_obj) {
 		// State agnostic code.
 		all_states(_obj);
 		
+		// Gravity.
+		apply_gravity(_obj, _obj.default_gravity);
+		
 		// Reset some properties for ground behaviour.
 		if is_on_ground(_obj) {
 			ground_resets(_obj);
@@ -113,13 +120,19 @@ function states_player(_obj) {
 		// State agnostic code.
 		all_states(_obj);
 		
+		// Gravity.
+		apply_gravity(_obj, _obj.default_gravity);
+		
 		// Handle FALL transition.
-		if input_check_released("accept") {
+		if !input_check("accept") {
 			_obj.state = STATE_PLAYER.FALL;
 		}
 
 		// Jump.
 		handle_jump_movement(_obj);
+		
+		// Jump Buffering.
+		handle_jump_buffer(_obj);
 		
 		// Handle JUMPTOP transition.
 		if _obj.jump_frames_remaining = _obj.jumptop_threshold {
@@ -135,11 +148,17 @@ function states_player(_obj) {
 		// State agnostic code.
 		all_states(_obj);
 		
+		// Gravity.
+		apply_gravity(_obj, _obj.fall_gravity);
+		
 		// Double jump if a valid one is triggered.
 		handle_double_jump(_obj, STATE_PLAYER.JUMP);
 	
 		// Handle any ongoing jump movement.
 		handle_jump_movement(_obj);
+	
+		// Jump Buffering.
+		handle_jump_buffer(_obj);
 	
 		// Count the Jumptop timer.
 		_obj.jumptop_frames_remaining--;
@@ -158,6 +177,9 @@ function states_player(_obj) {
 		// State agnostic code.
 		all_states(_obj);
 		
+		// Gravity.
+		apply_gravity(_obj, _obj.fall_gravity);
+		
 		// Landing.
 		if is_on_ground(_obj) {
 			_obj.state = STATE_PLAYER.IDLE;
@@ -168,6 +190,12 @@ function states_player(_obj) {
 	
 		// Double jump.
 		handle_double_jump(_obj, STATE_PLAYER.JUMP);
+		
+		// Jump Buffering.
+		handle_jump_buffer(_obj);
+		
+		// Coyote Jumps.
+		handle_coyote_jump(_obj);
 	
 		// Otherwise Gravity will do the rest...
 	};

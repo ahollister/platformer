@@ -11,23 +11,40 @@ move_y = 0;
 move_speed = 7;
 
 // Jump.
-jump_speed = -10;
+jump_speed = -13;
 jump_frames_remaining = 0;
-jump_frames_max = 12;
+jump_frames_max = 10;
 jump_count = 0;
 jump_max = 2;
+jump_buffer_frames = 0;
+jump_buffer_frames_max = 9;
+jump_buffer_attempted = false;
+
+// Coyote Jump.
+coyote_frames = 0;
+coyote_frames_prev = 0;
+coyote_frames_max = 4;
+coyote_disabled = false;
 
 // Jumptop.
 jumptop_threshold = 4
 jumptop_frames_remaining = 0;
-jumptop_frames_max = 15;
+jumptop_frames_max = 13;
 
 // Gravity.
-fall_gravity = 1;
+default_gravity = 1.2;
+fall_gravity = 1.5;
 terminal_velocity = 18;
 
+// Camera
+camera_follow_threshold = 400;
+camera_should_follow = false;
+original_x = 0;
+original_y = 0;
+
+
 // Used as a margin for collisions.
-floor_margin = 3;
+floor_margin = 4;
 
 // Set player collision mask.
 mask_index = sprite_index;

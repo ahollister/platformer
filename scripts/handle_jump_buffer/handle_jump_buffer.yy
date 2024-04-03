@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"handle_jump_buffer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"handle_jump_buffer",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Objects/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
