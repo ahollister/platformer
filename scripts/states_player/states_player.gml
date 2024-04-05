@@ -149,7 +149,7 @@ function states_player(_obj) {
 		all_states(_obj);
 		
 		// Gravity.
-		apply_gravity(_obj, _obj.fall_gravity);
+		apply_gravity(_obj, _obj.default_gravity);
 		
 		// Double jump if a valid one is triggered.
 		handle_double_jump(_obj, STATE_PLAYER.JUMP);
