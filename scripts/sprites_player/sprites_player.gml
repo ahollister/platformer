@@ -11,6 +11,7 @@ function sprites_player() {
 	sprites[STATE_PLAYER.JUMP] = spr_player_jump;
 	sprites[STATE_PLAYER.FALL] = spr_player_fall;
 	sprites[STATE_PLAYER.JUMPTOP] = spr_player_jump_top;
+	sprites[STATE_PLAYER.PUNCH] = spr_player_punch;
 
 	return sprites;
 }

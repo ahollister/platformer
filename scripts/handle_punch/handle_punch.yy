@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"handle_punch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"handle_punch",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Objects/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

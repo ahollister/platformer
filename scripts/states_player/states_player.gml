@@ -17,6 +17,8 @@ function states_player(_obj) {
 		apply_gravity(_obj);
 		// X movement and sprite direction.
 		handle_player_movement_x(_obj);
+		// Trigger punch if button pressed.
+		handle_punch(_obj, STATE_PLAYER.PUNCH);
 	}
 	
 	// Trigger JUMP.
@@ -33,7 +35,7 @@ function states_player(_obj) {
 		// Enter JUMPTOP state.
 		_obj.state = STATE_PLAYER.JUMPTOP;
 	};
-	
+
 	// Reset some properties for ground behaviour.
 	function ground_resets(_obj) {
 		_obj.move_y = 0;
@@ -170,6 +172,22 @@ function states_player(_obj) {
 		handle_double_jump(_obj, STATE_PLAYER.JUMP);
 	
 		// Otherwise Gravity will do the rest...
+	};
+
+
+	// -----
+	// PUNCH
+	// -----
+	states[STATE_PLAYER.PUNCH] = function(_obj) {
+		// State agnostic code.
+		all_states(_obj);
+
+		// Countdown the punch state frames.
+		_obj.punch_frames_remaining--
+
+		if _obj.punch_frames_remaining == 0 {
+			_obj.state = STATE_PLAYER.IDLE;
+		}
 	};
 	
 	

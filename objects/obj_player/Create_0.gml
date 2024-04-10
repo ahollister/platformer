@@ -22,6 +22,10 @@ jumptop_threshold = 4
 jumptop_frames_remaining = 0;
 jumptop_frames_max = 15;
 
+// Punch.
+punch_frames_remaining = 0;
+punch_frames_max = 10;
+
 // Gravity.
 fall_gravity = 1;
 terminal_velocity = 18;
@@ -47,6 +51,7 @@ enum STATE_PLAYER {
 	JUMP,
 	JUMPTOP,
 	FALL,
+	PUNCH,
 }
 
 // Setup states.
