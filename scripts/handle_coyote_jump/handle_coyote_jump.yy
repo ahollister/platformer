@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"handle_coyote_jump",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"handle_coyote_jump",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Objects/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
